@@ -71,7 +71,7 @@ export default function SignIn({setShowProfile})
         />
       </div>
       <button onClick={fnAuth} type="submit"
-              className={"bg-blue-500 rounded-[5px] p-[10px] m-[1px] mt-[20px] text-[white]"}>Submit
+              className={"bg-blue-500 rounded-[5px] p-[10px] m-[1px] mt-[20px] hover:bg-[#3274df] text-[white]"}>Submit
       </button>
     </form>
   );

@@ -35,28 +35,27 @@ export default function App()
       <div className={"m-10"}>
         {/* Общая навигационная панель */}
         <nav>
-          <NavLink to={"/"} className={"m-1 p-2 border-2"}
+          <NavLink to={"/"} className={"m-1 pl-[30px] pt-[7px] pr-[30px] pb-[7px] border-2"}
                    style={({isActive}) => ({fontWeight: isActive ? "bold" : ""})}>
             About us
           </NavLink>
           {
             showProfile ?
               <>
-                <NavLink to={"/profile"} className={"m-1 p-2 border-2"}
+                <NavLink to={"/profile"} className={"m-1 pl-[30px] pt-[7px] pr-[30px] pb-[7px] border-2"}
                          style={({isActive}) => ({fontWeight: isActive ? "bold" : ""})}>
                   Profile
                 </NavLink>
-                <NavLink to={"/"} className={"m-1 p-2 border-2"} onClick={fnLogout}>
+                <NavLink to={"/"} className={"m-1 pl-[30px] pt-[7px] pr-[30px] pb-[7px] border-2"} onClick={fnLogout}>
                   Sign out
                 </NavLink>
               </>
               :
-              <NavLink to={"/sign_in"} className={"m-1 p-2 border-2"}
+              <NavLink to={"/sign_in"} className={"m-1 pl-[30px] pt-[7px] pr-[30px] pb-[7px] border-2"}
                        style={({isActive}) => ({fontWeight: isActive ? "bold" : ""})}>
                 Sign in
               </NavLink>
           }
-
         </nav>
         <main className={"m-1"}>
           <Routes>
