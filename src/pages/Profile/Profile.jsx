@@ -14,8 +14,6 @@ export default function Profile()
   const [timeout2, setTimeout2] = useState(null);
   const [timeout3, setTimeout3] = useState(null);
 
-  //const navigate = useNavigate();
-
   useEffect(() =>
   {
     document.title = "Profile";
