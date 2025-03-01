@@ -4,6 +4,7 @@ import "./index.css";
 import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 import Profile from "./pages/Profile/Profile.jsx";
 import SignIn from "./pages/SignIn/SignIn.jsx";
+import ProtectedRoute from "./ProtectedRoute.jsx";
 
 export default function App()
 {
@@ -64,7 +65,9 @@ export default function App()
             {/* Маршрут страницы входа */}
             <Route path="/sign_in" element={<SignIn setShowProfile={setShowProfile}/>}/>
             {/* Защищенный маршрут страницы профиля */}
-            <Route path="/profile" element={<Profile showProfile={showProfile}/>}/>
+            <Route element={<ProtectedRoute/>}>
+              <Route path="/profile" element={<Profile showProfile={showProfile}/>}/>
+            </Route>
           </Routes>
         </main>
       </div>

@@ -1,8 +1,7 @@
 import {useEffect, useState} from "react";
-import {useNavigate} from "react-router-dom";
 import logo from "./logo.png";
 
-export default function Profile({showProfile})
+export default function Profile()
 {
   const [fullname, setFullname] = useState("");
   const [showRequesting, setShowRequesting] = useState(false);
@@ -15,17 +14,12 @@ export default function Profile({showProfile})
   const [timeout2, setTimeout2] = useState(null);
   const [timeout3, setTimeout3] = useState(null);
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   useEffect(() =>
   {
     document.title = "Profile";
-    if (localStorage.getItem("token") === null)
-    {
-      navigate("/");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showProfile]);
+  }, []);
 
   useEffect(() =>
   {
