@@ -42,6 +42,8 @@ export default function Profile()
     event.preventDefault();
     setStep1("");
     setStep2("");
+    setAuthor({});
+    setQuote("");
     setShowRequesting(true);
     /*
     * Запускаем цепочку вызовов
