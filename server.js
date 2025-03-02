@@ -111,6 +111,7 @@ app.post("/login", (req, res) =>
   }
 });
 
+// Возвращаем случайного автора
 app.get("/author", (req, res) =>
 {
   const token = req.query.token;
@@ -127,6 +128,7 @@ app.get("/author", (req, res) =>
   }
 })
 
+// Возвращаем случайную цитату автора
 app.get("/quote", (req, res) =>
 {
   const token = req.query.token;

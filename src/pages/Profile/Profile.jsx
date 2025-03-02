@@ -126,7 +126,7 @@ export default function Profile()
         showRequesting &&
         <>
           <div className={"fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"}
-               id="backgroundOverlay" onClick={() => setShowRequesting(false)}/>
+               id="backgroundOverlay" onClick={fnStopAllTimeouts}/>
           <div
             className={" flex flex-col border-4 p-[20px] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#fff] rounded-[10px]"}>
             <h1 className={"text-4xl font-bold"}>Requesting the quote</h1>
