@@ -1,4 +1,4 @@
-# React + Vite + Tailwind CSS
+# React + Vite + Tailwind CSS + Express
 Запуск проекта:
 1. npm i
 2. npm run dev
