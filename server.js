@@ -95,6 +95,7 @@ app.post("/login", (req, res) =>
   {
     if (req.body.email === item.email && req.body.password === item.password)
     {
+      // Для примера использовал uuid, но лучше использовать jwt
       token = uuidv4();
       userId = item.id;
     }
